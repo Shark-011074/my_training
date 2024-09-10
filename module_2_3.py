@@ -1,3 +1,4 @@
+# >>>>>> РАБОТА С УРОКА
 
 # from module_1_5 import list__5
 #
@@ -10,6 +11,8 @@
 #         print('Число не четное')
 #         break
 # print('Я за циклом ')
+#
+# >>>>>> КОНЕЦ РАБОТЫ С УРОКА
 
 # >>>>>>  ДОМАШНЯЯ РАБОТА
 
@@ -22,7 +25,9 @@ while index < list_length:
         index += 1
     else: break
 
-#>>>>>>>>>  КОНЕЦ ДОМАШНЕЙ РАБОТЫ
+# >>>>>>  КОНЕЦ ДОМАШНЕЙ РАБОТЫ
+
+# >>>>>> ДОП ПРАКТИКА
 
 # list_1 = [42, 69, 322,'gcr',True, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 # index = 0
@@ -34,4 +39,6 @@ while index < list_length:
 #             list_length -= 1
 #         else: list_length -= 1
 #     else: list_length -= 1
+
+# КОНЕЦ ДОП ПРАКТИКА
 
