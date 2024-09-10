@@ -40,5 +40,5 @@ while index < list_length:
 #         else: list_length -= 1
 #     else: list_length -= 1
 
-# КОНЕЦ ДОП ПРАКТИКА
+# >>>>>>  КОНЕЦ ДОП ПРАКТИКА
 
