@@ -20,10 +20,14 @@ list_1 = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 index = 0
 list_length = len(list_1)
 while index < list_length:
-    if list_1[index] >= 0:
+    if list_1[index] > 0:
         print(list_1[index])
         index += 1
-    else: break
+    elif list_1[index] < 0:
+        break
+    else:
+        index += 1
+        continue
 
 # >>>>>>  КОНЕЦ ДОМАШНЕЙ РАБОТЫ
 
@@ -41,4 +45,5 @@ while index < list_length:
 #     else: list_length -= 1
 
 # >>>>>>  КОНЕЦ ДОП ПРАКТИКА
+
 
