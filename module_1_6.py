@@ -31,6 +31,7 @@ print()
 #ДОМАШКА
 
 
+
 print ('работа со словарем')
 my_dict = {'alex':1985, 'tom':1996, 'anna':2005}
 print('Словарь my_dict:', my_dict)
