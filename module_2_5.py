@@ -108,7 +108,11 @@ def get_matrix(l,c,val_):
         li_l.append(li_c)
         for m in range(c):
             li_c.append(val_)
-            #print(li_c)
-    print(li_l)
+    return li_l
 
-get_matrix(4,2,13)
+result_1 = get_matrix(4,2,13)
+result_2 = get_matrix(2,4,10)
+result_3 = get_matrix(5,3,5)
+print(result_1)
+print(result_2)
+print(result_3)
