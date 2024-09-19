@@ -1,5 +1,6 @@
 import random
 
+
 calls = 0
 number_of_repetitions = int(input('Введите количество повторений - '))
 nm = 0
