@@ -1,45 +1,26 @@
-recipient_1 = input('Введите email для получения сообщения - ')
-message_1 = input('Введите текст сообщения - ')
-dom_en = ['.com', '.ru', '.net']
-var_recipient = False
-sender_1 = input('Если желаете отправить письмо с другого адреса, то введите email отправителя - ')
-
-
-if sender_1 != '':
-    for i in range(len(dom_en)):  # проверяем правильность введенного Нестандартного email адреса
-        if '@' in sender_1 and dom_en[i] in sender_1:
-            break
-        else: input('Введите правильный email отправителя - ')
-
+end_mail = ['.com', '.ru', '.net']
 
 
 def send_email(message, recipient, *, sender='university.help@gmail.com'):
-    global var_recipient
-    for i in range(len(dom_en)):  # проверяем правильность введенного email адреса
-        if '@' in recipient and dom_en[i] in recipient:
-            var_recipient = True
-            break
-        else:
-            continue
-
-    if var_recipient == False:
+    if (    ('@' not in recipient or '@' not in sender)
+            or
+            (recipient[-4:] not in end_mail and recipient[-3:] not in end_mail)
+            or
+            (sender[-4:] not in end_mail and sender[-3:] not in end_mail)):
         print('Невозможно отправить письмо с адреса', sender, 'на адрес', recipient)
 
     elif recipient == sender:
         print('Нельзя отправить письмо самому себе')
 
-    elif sender == 'university.help@gmail.com' and sender != sender_1:
-        print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient,'Текст письма : ',message_1)
+    elif sender == 'university.help@gmail.com':
+        print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient)
 
-    elif sender == 'university.help@gmail.com' and sender == sender_1:
-        print('Вы выбрали отправителя по умолчанию')
-        print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient,'Текст письма : ',message_1)
 
     elif sender != 'university.help@gmail.com':
-        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ!!!, Письмо отправлено с адреса', sender, 'на адрес', recipient,'Текст письма : ',message_1)
+        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ!!!, Письмо отправлено с адреса', sender, 'на адрес', recipient)
 
 
-if sender_1 == '':
-    send_email(message_1, recipient_1)
-else:
-    send_email(message_1, recipient_1, sender=sender_1)
+send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
+send_email('Вы видите это сообщение как лучший студент курса!', 'urban.fan@mail.ru', sender='urban.info@gmail.com')
+send_email('Пожалуйста, исправьте задание', 'urban.student@mail.ru', sender='urban.teacher@mail.uk')
+send_email('Напоминаю самому себе о вебинаре', 'urban.teacher@mail.ru', sender='urban.teacher@mail.ru')
