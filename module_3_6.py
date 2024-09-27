@@ -5,12 +5,12 @@ def calculate_structure_sum(a):
     global sum_
     for i in a:
         if isinstance(i, int) and type(i) != bool:
-            sum_ = sum_ + i
+            sum_ += i
         elif isinstance(i, str):
-            sum_ = sum_ + len(i)
+            sum_ += len(i)
         elif isinstance(i, bool):
             bool_ = str(i)
-            sum_ = sum_ + len(bool_)
+            sum_ += len(bool_)
         elif isinstance(i, list) or isinstance(i, tuple) or isinstance(i, set):
             calculate_structure_sum(i)
         elif isinstance(i, dict):
