@@ -10,3 +10,4 @@ average_score = {students[0]: (sum(grades[0]) / len(grades[0])),
                  students[4]: (sum(grades[4]) / len(grades[4]))}
 
 print(average_score)
+

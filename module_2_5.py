@@ -31,7 +31,7 @@ def lottery():  # Возвращающая функция
 
 
 win = lottery()
-print(win)
+print('win - ',win)
 
 print()
 
@@ -140,8 +140,8 @@ print(result_3)
 def get_matrix1(n, m, value):
     matrix1 = []
     for i in range(n):
-        matrix.append([])
+        matrix1.append([])
         for j in range(m):
-            matrix[i].append(value)
+            matrix1[i].append(value)
     return matrix1
 result_11 = get_matrix1(2, 2, 10)

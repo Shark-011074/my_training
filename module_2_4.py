@@ -11,6 +11,7 @@
 #
 # for i in range(1, 11, 2):  # start , stop, step
 #     print(i)
+
 #
 # for i in range(1, 11):
 #     for j in range(1, 11):
@@ -29,7 +30,7 @@ from operator import length_hint
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # >>>>>> ДОМАШНЯЯ РАБОТА
-
+#
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []  # Простые числа делятся только на 1 и на самого себя
 not_primes = []  # Не простое число, имеет более 2-х делителей
@@ -90,3 +91,6 @@ print('Not Primes', not_primes)
 #
 # print('Primes: ', primes)
 # print('Not Primes', not_primes)
+
+
+
