@@ -1,21 +1,3 @@
-# class Example:
-#     def __new__(cls, *args, **kwargs):
-#         print(args)
-#         print(kwargs)
-#         print(object.__new__(cls))
-#         return object.__new__(cls)
-#
-#
-#     def __init__(self, first, second, third):
-#         print(first)
-#         print(second)
-#         print(third)
-#
-#
-# ex = Example('data', second=25, third=3.14)
-from operator import delitem
-
-
 class House:
     houses_history = []
 
@@ -28,8 +10,7 @@ class House:
         self.number_of_floors = number_of_floors
 
     def __del__(self):
-        print (f'{self.name} снесён, но он останется в истории ')
-
+        print(f'{self.name} снесён, но он останется в истории ')
 
 
 h1 = House('ЖК Эльбрус', 10)
@@ -44,8 +25,3 @@ print(House.houses_history)
 del h2
 del h1
 print(House.houses_history)
-
-
-
-
-
